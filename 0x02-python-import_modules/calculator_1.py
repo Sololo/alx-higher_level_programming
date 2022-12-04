@@ -44,7 +44,7 @@ def div(a, b):
     Args:
         a: first integer
         b: second integer
-        
+
     Returns:
         The return value. a / b
     """
