@@ -1,14 +1,15 @@
-nes (21 sloc)  484 Bytes
 #ifndef LISTS_H
 #define LISTS_H
-#include <stdio.h>
+
+#include <stdlib.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for Holberton project
+ * for ALX project
  */
 typedef struct listint_s
 {
@@ -22,4 +23,4 @@ void free_listint(listint_t *head);
 
 int is_palindrome(listint_t **head);
 
-#endif
+#endif /* LISTS_H */
