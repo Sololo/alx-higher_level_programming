@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Prints an integer with "{:d}".format().
 """

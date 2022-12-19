@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-"""
-prints x elements of a list.
-"""
-
-
 def safe_print_list(my_list=[], x=0):
-    nb = 0
-    for x in range(0, x):
-        try:
-            print(my_list[x], end="")
-            nb += 1
-        except:
-            break
+    y = 0
+    if not my_list:
         print("")
-        return (nb)
+        return (0)
+    while y < x:
+        try:
+            print("{}".format(my_list[y]), end="")
+            y = y + 1
+        except IndexError:
+            break
+    print("")
+    return (y)
