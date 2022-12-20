@@ -36,7 +36,7 @@ class Square:
         return self.size != other.size
 
     def __gt__(self, other):
-        """Compare if square is greater than another by area """
+        """Compare if square is greater than another by area"""
         return self.size > other.size
 
     def __ge__(self, other):
@@ -50,5 +50,3 @@ class Square:
     def __lt__(self, other):
         """Compare if square is less than another by area"""
         return self.size < other.size
-
-     
