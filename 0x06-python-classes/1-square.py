@@ -3,9 +3,10 @@
 
 
 class Square:
-    """ 
+    """
     Square class defined by geometric shap
     """
+
     def __init__(self, size):
         """
         Initialize methode
