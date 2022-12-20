@@ -3,9 +3,10 @@
 
 
 class Square:
-    """ 
+    """
     Square class defined by geometric shap
     """
+
     def __init__(self, size=0):
         """
         initializes the square
@@ -20,14 +21,14 @@ class Square:
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
-                raise ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0")
         else:
             self.__size = size
 
     def area(self):
         """
-            set square square area
-            Return:
-                the current square area (int)
+        set square square area
+        Return:
+            the current square area (int)
         """
-        return self.__size ** 2
+        return self.__size**2

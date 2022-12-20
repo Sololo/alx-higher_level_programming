@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+
 class Square:
-    """ 
+    """
     Square class defined by geometric shap
     """
+
     def __init__(self, size=0):
         """
         Initialize methode

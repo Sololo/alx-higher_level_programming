@@ -12,6 +12,7 @@ class Node:
         next_node (Node): a pointer to the next node
             in the linked list
     """
+
     def __init__(self, data, next_node=None):
         """
         Class initializer
@@ -68,12 +69,14 @@ class Node:
         else:
             self.__next_node = value
 
+
 class SinglyLinkedList:
     """
     SiglyLinkedList defines the singly linked list
     Attributes:
         head (Node): a pointer to the singly linked list
     """
+
     def __init__(self):
         """
         Class initializer
@@ -85,7 +88,7 @@ class SinglyLinkedList:
         tmp = self.__head
         while tmp is not None:
             result += str(self.data)
-            result += '\n'
+            result += "\n"
             tmp = tmp.__next_node
         return result
 

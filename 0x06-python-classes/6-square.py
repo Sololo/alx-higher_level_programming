@@ -3,9 +3,10 @@
 
 
 class Square:
-    """ 
+    """
     Square class defined by geometric shap
     """
+
     def __init__(self, size=0, position=(0, 0)):
         """initializes the square
         Args:
@@ -23,7 +24,7 @@ class Square:
         Return:
             the current square area (int)
         """
-        return self.__size ** 2
+        return self.__size**2
 
     @property
     def size(self):
@@ -62,10 +63,10 @@ class Square:
         if self.size == 0:
             print()
         else:
-            print('\n'*self.__position[1], end='')
+            print("\n" * self.__position[1], end="")
             for i in range(0, self.__size):
-                print(' '*self.__position[0], end='')
-                print('#'*self.__size)
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size)
 
     @property
     def position(self):
