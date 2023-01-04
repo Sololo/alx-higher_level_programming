@@ -7,7 +7,7 @@ This module is composed by a function that divides the numbers of a matrix
 
 
 def matrix_divided(matrix, div):
-    """ Function that divides the integer/float numbers of a matrix
+    """Function that divides the integer/float numbers of a matrix
 
     Args:
         matrix: list of a lists of integers/floats
@@ -55,4 +55,4 @@ def matrix_divided(matrix, div):
         len_e = len(elems)
 
     m = list(map(lambda x: list(map(lambda y: round(y / div, 2), x)), matrix))
-    return (m)
+    return m
