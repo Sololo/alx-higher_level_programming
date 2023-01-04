@@ -5,13 +5,13 @@ This module is composed by a class that defines a Rectangle
 
 
 class Rectangle:
-    """ Class that defines a rectangle """
+    """Class that defines a rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """ Method that initializes the instance
+        """Method that initializes the instance
         Args:
             width: rectangle width
             height: rectangle height
@@ -23,7 +23,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ method that returns the value of the width
+        """method that returns the value of the width
         Returns:
             rectangle width
         """
@@ -32,7 +32,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ method that defines the width
+        """method that defines the width
         Args:
             value: width
         Raises:
@@ -48,7 +48,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ method that returns the value of the height
+        """method that returns the value of the height
         Returns:
             rectangle height
         """
@@ -57,7 +57,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """ method that defines the height
+        """method that defines the height
         Args:
             value: height
         Raises:
@@ -72,7 +72,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """ Method that calculates the Rectangle area
+        """Method that calculates the Rectangle area
         Returns:
             rectangle area
         """
@@ -80,7 +80,7 @@ class Rectangle:
         return self.width * self.height
 
     def perimeter(self):
-        """ Method that calculates the Rectangle perimeter
+        """Method that calculates the Rectangle perimeter
         Returns:
             rectangle perimeter
         """
@@ -91,7 +91,7 @@ class Rectangle:
         return (2 * self.width) + (2 * self.height)
 
     def __str__(self):
-        """ Method that returns the Rectangle #
+        """Method that returns the Rectangle #
         Returns:
             str of the rectangle
         """
@@ -107,7 +107,7 @@ class Rectangle:
         return rectangle[:-1]
 
     def __repr__(self):
-        """ Method that returns the string represantion of the instance
+        """Method that returns the string represantion of the instance
         Returns:
             string represenation of the object
         """
@@ -115,15 +115,14 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
     def __del__(self):
-        """ Method that prints a message when the instance is deleted
-        """
+        """Method that prints a message when the instance is deleted"""
 
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """ Method that returns the bigger Rectangle
+        """Method that returns the bigger Rectangle
         Args:
             rect_1: Rectangle 1
             rect_2: Rectangle 2

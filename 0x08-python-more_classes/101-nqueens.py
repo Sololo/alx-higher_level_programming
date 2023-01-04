@@ -6,7 +6,7 @@ using backtracking
 
 
 def isSafe(m_queen, nqueen):
-    """ Method that determines if the queens can or can't kill each other
+    """Method that determines if the queens can or can't kill each other
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
@@ -27,7 +27,7 @@ def isSafe(m_queen, nqueen):
 
 
 def print_result(m_queen, nqueen):
-    """ Method that prints the list with the Queens positions
+    """Method that prints the list with the Queens positions
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
@@ -42,7 +42,7 @@ def print_result(m_queen, nqueen):
 
 
 def Queen(m_queen, nqueen):
-    """ Recursive function that executes the Backtracking algorithm
+    """Recursive function that executes the Backtracking algorithm
     Args:
         m_queen: array that has the queens positions
         nqueen: queen number
@@ -54,7 +54,7 @@ def Queen(m_queen, nqueen):
 
     m_queen[nqueen] = -1
 
-    while((m_queen[nqueen] < len(m_queen) - 1)):
+    while m_queen[nqueen] < len(m_queen) - 1:
 
         m_queen[nqueen] += 1
 
@@ -65,7 +65,7 @@ def Queen(m_queen, nqueen):
 
 
 def solveNQueen(size):
-    """ Function that invokes the Backtracking algorithm
+    """Function that invokes the Backtracking algorithm
     Args:
         size: size of the chessboard
     """
@@ -75,7 +75,7 @@ def solveNQueen(size):
     Queen(m_queen, 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     import sys
 

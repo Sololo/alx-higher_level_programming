@@ -5,10 +5,10 @@ This module is composed by a class that defines a Rectangle
 
 
 class Rectangle:
-    """ Class that defines a rectangle """
+    """Class that defines a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """ Method that initializes the instance
+        """Method that initializes the instance
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -18,7 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ method that returns the value of the width
+        """method that returns the value of the width
         Returns:
             width of the rectangle
         """
@@ -27,7 +27,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ method that defines the width
+        """method that defines the width
         Args:
             value: width
         Raises:
@@ -43,7 +43,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ method that returns the value of the height
+        """method that returns the value of the height
         Returns:
             height of the rectangle
         """
@@ -52,7 +52,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """ method that defines the height
+        """method that defines the height
         Args:
             value: height
         Raises:
